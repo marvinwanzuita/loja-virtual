@@ -1,26 +1,25 @@
 package com.mawit.backend.entity;
 
-import lombok.*;
-import org.hibernate.Hibernate;
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
 
 import javax.persistence.*;
 import java.util.Date;
-import java.util.Objects;
-
 
 @Entity
-@Table(name = "estado")
+@Table(name = "marca")
 @Getter
 @Setter
 @ToString
 @RequiredArgsConstructor
-public class Estado {
+public class Marca {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String nome;
-    private String sigla;
 
     @Temporal(TemporalType.TIMESTAMP)
     private Date dataCriacao;
