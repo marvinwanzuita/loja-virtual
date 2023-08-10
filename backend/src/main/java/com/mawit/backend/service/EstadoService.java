@@ -18,14 +18,14 @@ public class EstadoService {
         return estadoRepository.findAll();
     }
 
-    public Estado inserir(Estado estado){
-        estado.setDataCriacao(new Date());
-        return estadoRepository.saveAndFlush(estado);
+    public Estado inserir(Estado objeto){
+        objeto.setDataCriacao(new Date());
+        return estadoRepository.saveAndFlush(objeto);
     }
 
-    public Estado alterar(Estado estado){
-        estado.setDataAtualizacao(new Date());
-        return estadoRepository.saveAndFlush(estado);
+    public Estado alterar(Estado objeto){
+        objeto.setDataAtualizacao(new Date());
+        return estadoRepository.saveAndFlush(objeto);
     }
 
     public void excluir(Long id){
