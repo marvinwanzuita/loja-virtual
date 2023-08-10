@@ -1,8 +1,6 @@
 package com.mawit.backend.service;
 
-import com.mawit.backend.entity.Estado;
 import com.mawit.backend.entity.Marca;
-import com.mawit.backend.respository.EstadoRepository;
 import com.mawit.backend.respository.MarcaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
